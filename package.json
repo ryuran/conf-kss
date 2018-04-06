@@ -1,0 +1,25 @@
+{
+  "name": "conf-kss",
+  "version": "1.0.0",
+  "description": "Slides for conference about style guides",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./build",
+    "install": "gulp && npm run build:slides && npm run build:demo",
+    "build:styles": "gulp",
+    "build:slides": "remarker build",
+    "build:demo": "kss -c kss.json",
+    "test": "echo “No test specified” && exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.0",
+    "http-server": "^0.11.1",
+    "kss": "^3.0.0-beta.18",
+    "remarker": "^1.7.1",
+    "remark": "gnab/remark#v0.14.0"
+  }
+}

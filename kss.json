@@ -1,0 +1,14 @@
+{
+  "source": "src",
+  "destination": "build/demo",
+  "//": "The css and js paths are URLs relative to the style guide destination.",
+  "css": [
+      "../assets/styles/main.css"
+  ],
+  "js": [],
+  "title": "Demo Style Guide",
+  "verbose": false,
+  "//": "The homepage paths to relative to the style guide source.",
+  "homepage": "readme.md",
+  "builder": "builder/twig"
+}

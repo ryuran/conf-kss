@@ -1,0 +1,8 @@
+port: 6275
+dest: build
+source: slides.md
+title: 'KSS conf'
+assets: ['assets']
+css: ''
+cssFiles: [assets/styles/main.css]
+remarkPath: node_modules/remark/out/remark.min.js
