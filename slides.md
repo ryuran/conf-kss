@@ -288,21 +288,47 @@ Un builder custom est une classe javascript qui etend un des builde natif
 template, js, css
 
 ---
+
+### Et c’est ce que nous avons fait,
+
+tout d’abords pour nôtre boîte à outils d’intégrateurs web, le *Garden Starter Kit*,
+
+puis chez mon actuel client __20 Minites__ pour sa charte graphique nommée __Colette__.
+
+http://developers.20minutes.fr/colette/
+
+---
+
+## Les fonctionnalités future
+
+KSS gèrera :
+- les `builders` externes en tant que dépendance node,
+- les modifier par attributs pour les état comme `[aria-busy=true]`,
+- les liens par référence de section `[Buttons](kss:Elements.Buttons)`.
+
+Et pour ça, on a besoin de vous, utilisateurs et pourquoi pas contributeurs.
+
+---
 class: center, middle
 
+# Merci à tous !
+
+C’est le moment des questions.
+
 <div class="socialCard">
-  <div class="socialCard-figure"><img class="socialCard-img" src="../assets/svg/cat.svg" alt=""></div>
+  <div class="socialCard-figure"><img class="socialCard-img" src="assets/svg/cat.svg" alt=""></div>
   <h1 class="socialCard-title">
     <span class="socialCard-title-firstName">Yvain</span>
     <span class="socialCard-title-lastName">Liechti</span>
   </h1>
   <div class="socialCard-desc">
     <p>
-      À vos services sur twitter <a href="https://twitter.com/ryuran78"> @ryuran78</a><br>
-      et sur Github <a href="https://github.com/ryuran"> @ryuran</a>.
+      À vos services sur twitter <a href="https://twitter.com/ryuran78">@ryuran78</a><br>
+      et sur Github <a href="https://github.com/ryuran">@ryuran</a>.
     </p>
     <p><a href="https://ryuran.info">Ryuran.info</a></p>
   </div>
 </div>
 
-Ces slides son disponible sur <a href="http://ryuran.info/conf-kss">http://ryuran.info/conf-kss</a> et toutes les sources sur <a href="https://github.com/ryuran">https://github.com/ryuran/conf-kss</a>.
+Ces slides son disponible sur http://ryuran.info/conf-kss  
+et toutes les sources sur https://github.com/ryuran.
