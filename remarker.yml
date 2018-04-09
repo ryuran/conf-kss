@@ -3,6 +3,6 @@ dest: build
 source: slides.md
 title: 'KSS conf'
 assets: ['assets']
-css: ''
+css: '.remark-code{font-size:1em}'
 cssFiles: [assets/styles/main.css]
 remarkPath: node_modules/remark/out/remark.min.js

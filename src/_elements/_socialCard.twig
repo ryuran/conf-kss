@@ -1,11 +1,17 @@
 <div class="socialCard">
+  <div class="socialCard-figure"><img class="socialCard-img" src="{{ img }}" alt=""/></div>
   <h1 class="socialCard-title">
-    <span class="socialCard-title-firstName">{{ firstName }}</span>
-    <span class="socialCard-title-lastName">{{ lastName }}</span>
+    <span class="socialCard-firstName">{{ firstName }}</span>
+    <span class="socialCard-lastName">{{ lastName }}</span>
   </h1>
-  <p class="socialCard-desc">
-    À vos services sur twitter <a href="https://twitter.com/{{ twitterName }}"> @{{ twitterName }}</a><br/>
-    et sur Github <a href="https://github.com/{{ githubName }}"> @{{ githubName }}</a>
-  </p>
-<div>
+  <div class="socialCard-desc">
+    <p>
+      À vos services sur twitter <a href="https://twitter.com/{{ twitterName }}"> @{{ twitterName }}</a><br/>
+      et sur Github <a href="https://github.com/{{ githubName }}"> @{{ githubName }}</a>.
+    </p>
+    {% if site is defined %}
+      <p><a href="{{ site.url }}">{{ site.name }}</a></p>
+    {% endif %}
+  </div>
+</div>
 
