@@ -2,5 +2,10 @@
   "firstName": "Yvain",
   "lastName": "Liechti",
   "twitterName": "ryuran78",
-  "githubName": "ryuran"
+  "githubName": "ryuran",
+  "img": "../assets/svg/cat.svg",
+  "site": {
+    "url": "https://ryuran.info",
+    "name": "Ryuran.info"
+  }
 }

@@ -50,9 +50,7 @@ Le guide de styles en est l’extension technique.
 - Un directeur artistique est par définition le créateur d’une charte graphique
 - Sinon c’est un graphiste
 
----
-
-## Les guides de styles connus
+### Quelques guides de styles connus
 
 - [Bootstrap](https://getbootstrap.com/docs/4.0)
 - [Lonelyplanet](http://rizzo.lonelyplanet.com/styleguide)
@@ -69,7 +67,7 @@ Ou plutôt des outils :
 - vue-styleguidist, un fork pour Vue.js un peu en retard,
 - mdcss,
 - styledocco,
-- Paternlab.io
+- Paternlab.io,
 - KSS,
 - …
 
@@ -220,13 +218,13 @@ Mais là on va dire :
 ### Un template externe
 ```scss
 /*
-Tables
+Social Card
 
-Default style for data tables
+Card with name and social media link of user.
 
-Markup: table.twig
+Markup: _socialCard.twig
 
-Style guide: Bases.Table
+Style guide: Elements.SocialCard
 */
 ```
 
@@ -234,9 +232,37 @@ Style guide: Bases.Table
 
 ### Que l’on peut accompagner de données
 ```json
-{}
+{
+  "firstName": "Yvain",
+  "lastName": "Liechti",
+  "twitterName": "ryuran78",
+  "githubName": "ryuran",
+  "img": "../assets/svg/cat.svg",
+  "site": {
+    "url": "https://ryuran.info",
+    "name": "Ryuran.info"
+  }
+}
 ```
 
+```twig
+<div class="socialCard">
+  <div class="socialCard-figure"><img class="socialCard-img" src="{{ img }}" alt=""/></div>
+  <h1 class="socialCard-title">
+    <span class="socialCard-firstName">{{ firstName }}</span>
+    <span class="socialCard-lastName">{{ lastName }}</span>
+  </h1>
+  <div class="socialCard-desc">
+    <p>
+      À vos services sur twitter <a href="https://twitter.com/{{ twitterName }}"> @{{ twitterName }}</a><br/>
+      et sur Github <a href="https://github.com/{{ githubName }}"> @{{ githubName }}</a>.
+    </p>
+    {% if site is defined %}
+      <p><a href="{{ site.url }}">{{ site.name }}</a></p>
+    {% endif %}
+  </div>
+</div>
+```
 ---
 
 ## Agrémenter KSS
@@ -262,4 +288,21 @@ Un builder custom est une classe javascript qui etend un des builde natif
 template, js, css
 
 ---
+class: center, middle
 
+<div class="socialCard">
+  <div class="socialCard-figure"><img class="socialCard-img" src="../assets/svg/cat.svg" alt=""></div>
+  <h1 class="socialCard-title">
+    <span class="socialCard-title-firstName">Yvain</span>
+    <span class="socialCard-title-lastName">Liechti</span>
+  </h1>
+  <div class="socialCard-desc">
+    <p>
+      À vos services sur twitter <a href="https://twitter.com/ryuran78"> @ryuran78</a><br>
+      et sur Github <a href="https://github.com/ryuran"> @ryuran</a>.
+    </p>
+    <p><a href="https://ryuran.info">Ryuran.info</a></p>
+  </div>
+</div>
+
+Ces slides son disponible sur <a href="http://ryuran.info/conf-kss">http://ryuran.info/conf-kss</a> et toutes les sources sur <a href="https://github.com/ryuran">https://github.com/ryuran/conf-kss</a>.
