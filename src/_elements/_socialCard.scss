@@ -1,0 +1,21 @@
+/*
+Social Card
+
+Markup: _socialCard.twig
+
+Style guide: Elements.SocialCard
+*/
+
+.socialCard {
+  &-title {
+    font-weight: bold;
+
+    // &-firstName {}
+
+    &-lastName {
+      text-transform: uppercase;
+    }
+  }
+
+  // &-desc {}
+}
