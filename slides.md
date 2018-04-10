@@ -45,16 +45,16 @@ Le guide de styles en est l’extension technique.
 - transcription de la charte graphique en code
 - support de communication entre graphistes et développeurs
 
-???
-
-- Un directeur artistique est par définition le créateur d’une charte graphique
-- Sinon c’est un graphiste
-
 ### Quelques guides de styles connus
 
 - [Bootstrap](https://getbootstrap.com/docs/4.0)
 - [Lonelyplanet](http://rizzo.lonelyplanet.com/styleguide)
 - et [d’autres](https://adele.uxpin.com/)
+
+???
+
+- Un directeur artistique est par définition le créateur d’une charte graphique
+- Sinon c’est un graphiste
 
 ---
 
@@ -291,7 +291,7 @@ template, js, css
 
 ### Et c’est ce que nous avons fait,
 
-tout d’abords pour nôtre boîte à outils d’intégrateurs web, le *Garden Starter Kit*,
+tout d’abords pour notre boîte à outils d’intégrateurs web, le *Garden Starter Kit*,
 
 puis chez mon actuel client __20 Minutes__ pour sa charte graphique nommée __Colette__.
 
