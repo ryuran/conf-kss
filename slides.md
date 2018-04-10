@@ -94,7 +94,7 @@ N’hésitez pas à me twitter des liens si vous en connaissez.
 
 Les avantages :
 - Indépendant du système de génération du CSS (pré et post-processeurs)
-- Gère differents langages de template (twig.js, handlebars, nunjucks)
+- Gère différents langages de template (twig.js, handlebars, nunjucks)
 - Permet de faire son propre `builder` (surcharger, ajouter des fonctionalités et styler son guide de styles).
 
 ???
@@ -291,7 +291,7 @@ template, js, css
 
 ### Et c’est ce que nous avons fait,
 
-tout d’abords pour notre boîte à outils d’intégrateurs web, le *Garden Starter Kit*,
+tout d’abord pour notre boîte à outils d’intégrateurs web, le *Garden Starter Kit*,
 
 puis chez mon actuel client __20 Minutes__ pour sa charte graphique nommée __Colette__.
 
@@ -302,8 +302,8 @@ http://developers.20minutes.fr/colette/
 ## Les fonctionnalités futures
 
 KSS permettra :
-- d’ajouter un `builder` externes en tant que dépendance node,
-- les `modifiers` par attributs pour les état comme `[aria-busy=true]`,
+- d’ajouter un `builder` externe en tant que dépendance node,
+- les `modifiers` par attributs pour les états comme `[aria-busy=true]`,
 - les liens par référence de section `[Buttons](kss:Elements.Buttons)`.
 
 Et pour ça, on a besoin de vous, utilisateurs et pourquoi pas contributeurs.
@@ -323,7 +323,7 @@ C’est le moment des questions.
   </h1>
   <div class="socialCard-desc">
     <p>
-      À votre service sur twitter <a href="https://twitter.com/ryuran78">@ryuran78</a><br>
+      À votre service sur Twitter <a href="https://twitter.com/ryuran78">@ryuran78</a><br>
       et sur Github <a href="https://github.com/ryuran">@ryuran</a>.
     </p>
     <p><a href="https://ryuran.info">Ryuran.info</a></p>
