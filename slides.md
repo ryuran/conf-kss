@@ -38,7 +38,7 @@ et consultant chez __Clever Age__ depuis près de 5 ans.
 ## La charte graphique
 
 Ce sont toutes les règles définies par le __directeur artistique__
-afin que toutes créations respectent l’__identité visuelle__.
+afin que les créations respectent l’__identité visuelle__.
 
 Le guide de styles en est l’extension technique.
 
@@ -58,7 +58,7 @@ Le guide de styles en est l’extension technique.
 
 ---
 
-## Écrire de la doc, c’est long.
+## Écrire de la doc, c’est long
 
 Oui, mais __en automatisant c’est plus facile__ et « il y a une app pour ça ».
 
@@ -72,7 +72,7 @@ Ou plutôt des outils :
 - …
 
 Si la documentation n’est pas mise à jour en même temps que le code,
-elle diverge et perd son utilité.
+elle diverge et perd de son utilité.
 
 Pour éviter ça, ces outils permettent de __garder la doc proche du code__ correspondant.
 
@@ -95,7 +95,7 @@ N’hésitez pas à me twitter des liens si vous en connaissez.
 Les avantages :
 - Indépendant du système de génération du CSS (pré et post-processeurs)
 - Gère differents langages de template (twig.js, handlebars, nunjucks)
-- Permet de faire son propre `builder` (surcharger, ajouter des fonctionalités et styler son guide de style).
+- Permet de faire son propre `builder` (surcharger, ajouter des fonctionalités et styler son guide de styles).
 
 ???
 
@@ -269,10 +269,10 @@ Style guide: Elements.SocialCard
 
 Nous avons vu les fonctionalités natives de KSS.
 
-Quand est-il si on veut documenter :
- - une palette de couleur ?
+Qu’en est-il si on veut documenter :
+ - une palette de couleurs ?
  - des symboles SVG ?
- - autre ?
+ - autres… ?
 
 Kss permet :
  - d’ajouter des propriétés,
@@ -299,11 +299,11 @@ http://developers.20minutes.fr/colette/
 
 ---
 
-## Les fonctionnalités future
+## Les fonctionnalités futures
 
-KSS gèrera :
-- les `builders` externes en tant que dépendance node,
-- les modifier par attributs pour les état comme `[aria-busy=true]`,
+KSS permettra :
+- d’ajouter un `builder` externes en tant que dépendance node,
+- les `modifiers` par attributs pour les état comme `[aria-busy=true]`,
 - les liens par référence de section `[Buttons](kss:Elements.Buttons)`.
 
 Et pour ça, on a besoin de vous, utilisateurs et pourquoi pas contributeurs.
