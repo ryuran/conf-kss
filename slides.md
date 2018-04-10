@@ -9,7 +9,7 @@ Une charte graphique en conditions réelles.
 
 ## Pourquoi ce sujet ?
 
-Je suis __Yvain Liechti__,  “**Lead Front End Developer**”  
+Je suis __Yvain Liechti__,  “*Lead Front End Developer*”  
 et consultant chez __Clever Age__ depuis près de 5 ans.
 
 ![cat](assets/svg/cat.svg)
@@ -37,7 +37,7 @@ et consultant chez __Clever Age__ depuis près de 5 ans.
 
 ## La charte graphique
 
-Ce sont toutes les règles imposées par le __directeur artistique__
+Ce sont toutes les règles définies par le __directeur artistique__
 afin que toutes créations respectent l’__identité visuelle__.
 
 Le guide de styles en est l’extension technique.
@@ -293,7 +293,7 @@ template, js, css
 
 tout d’abords pour nôtre boîte à outils d’intégrateurs web, le *Garden Starter Kit*,
 
-puis chez mon actuel client __20 Minites__ pour sa charte graphique nommée __Colette__.
+puis chez mon actuel client __20 Minutes__ pour sa charte graphique nommée __Colette__.
 
 http://developers.20minutes.fr/colette/
 
@@ -323,12 +323,12 @@ C’est le moment des questions.
   </h1>
   <div class="socialCard-desc">
     <p>
-      À vos services sur twitter <a href="https://twitter.com/ryuran78">@ryuran78</a><br>
+      À votre service sur twitter <a href="https://twitter.com/ryuran78">@ryuran78</a><br>
       et sur Github <a href="https://github.com/ryuran">@ryuran</a>.
     </p>
     <p><a href="https://ryuran.info">Ryuran.info</a></p>
   </div>
 </div>
 
-Ces slides son disponible sur http://ryuran.info/conf-kss  
+Ces slides sont disponibles sur http://ryuran.info/conf-kss  
 et toutes les sources sur https://github.com/ryuran.
