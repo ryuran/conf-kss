@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Patua+One|Share+Tech+Mono|Share:400,400i,700,700i&subset=latin-ext");
+/*
+Typography
+
+Typographic rules.
+
+Markup: _typography.twig
+
+Styleguide Bases.Typography
+*/
+html {
+  font-size: 1em; }
+
+body {
+  background-color: white;
+  font-family: 'Share', cursive;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333; }
+
+p {
+  margin: 1em 0; }
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-family: 'Patua One', cursive;
+  font-weight: normal;
+  line-height: 1.2; }
+
+h1 {
+  margin-top: 0;
+  font-size: 5.063em; }
+
+h2 {
+  font-size: 3.375em; }
+
+h3 {
+  font-size: 2.25em; }
+
+h4 {
+  font-size: 1.5em; }
+
+small {
+  font-size: 0.667em; }
+
+code {
+  font-family: 'Share Tech Mono', monospace; }
+
+pre {
+  font-size: .8em; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*
+Links
+
+Default link style.
+
+:visited - visited state
+
+Markup:
+<a href="#" class="{{ modifier_class }}">This is a link</a>
+
+Styleguide Bases.Links
+*/
+:link {
+  text-decoration: underline;
+  color: #B53; }
+
+:visited {
+  text-decoration: underline;
+  color: #389; }
+
+/*
+List
+
+Default style for ordered and unordered lists.
+
+Markup:
+{% for element in ['ul', 'ol'] %}
+  <{{ element }}>
+    {% for i in 0..5 %}
+      <li>Item {{ i }}</li>
+    {% endfor %}
+    <li> An other item but with more text to show you how the list element will look like it a sentence need to go to a new line.</li>
+    <li>
+      <p>Wath if some paragraphs are in the list?</p>
+    </li>
+    <li>
+      <{{ element }}>
+        {% for i in 0..5 %}
+          <li>Item {{ i }}</li>
+        {% endfor %}
+          <li>
+            <{{ element }}>
+              {% for i in 0..5 %}
+                <li>Item {{ i }}</li>
+              {% endfor %}
+            </{{ element }}>
+          </li>
+      </{{ element }}>
+    </li>
+  </{{ element }}>
+{% endfor %}
+
+Style guide: Bases.Lists
+*/
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 1.1em; }
+
+/*
+Alerts
+
+Message box to communicate with users.
+
+.alert_info     - info message
+.alert_success  - success message
+.alert_warning  - warning message
+.alert_error    - error message
+
+Markup:
+<div class="alert {{ modifier_class }}">
+  <p>Alerts message with a <a href="#">link</a>.</p>
+</div>
+
+Style guide: Elements.Alerts
+*/
+.alert {
+  padding: 0 1em;
+  overflow: hidden;
+  color: #222;
+  background-color: #eee;
+  border-color: 1px solid #d5d5d5;
+  border-radius: .25rem; }
+  .alert :link {
+    color: inherit;
+    text-decoration: underline; }
+  .alert_info {
+    color: #153040;
+    background-color: #9abed4;
+    border-color: 1px solid #76a8c4; }
+  .alert_success {
+    color: #3e541e;
+    background-color: #c9dab0;
+    border-color: 1px solid #b2ca8d; }
+  .alert_warning {
+    color: #935b06;
+    background-color: #f8dfb9;
+    border-color: 1px solid #f4ca8b; }
+  .alert_error {
+    color: #8b1f1a;
+    background-color: #f2cecc;
+    border-color: 1px solid #e7a7a3; }
+
+/*
+Buttons
+
+A majority of buttons in the site are built from
+the same base class.
+
+Markup:
+<button type="button" class="btn">Button</button>
+<a href="#" class="btn">Button link</a>
+
+Style guide: Elements.Buttons
+*/
+.btn {
+  display: inline-block;
+  padding: .5em 1.5em;
+  border-radius: 20em;
+  /* excessive value to keep it round */
+  font-weight: bold;
+  background-color: #E87F67;
+  color: #3E3040;
+  /* … */
+  font-family: sans-serif;
+  font-size: .875em;
+  line-height: 1.5em;
+  vertical-align: baseline;
+  text-align: center;
+  text-decoration: none;
+  border: none; }
+
+/*
+Social Card
+
+Card with name and social media link of user.
+
+Markup: _socialCard.twig
+
+Style guide: Elements.SocialCard
+*/
+.socialCard {
+  position: relative;
+  text-align: left;
+  border-radius: 1em;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 1px 0.5em 1px rgba(0, 0, 0, 0.08);
+  padding: 1.2rem 1.2em .2em 11.2em; }
+  .socialCard-figure {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 10em;
+    overflow: hidden; }
+  .socialCard-img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%; }
+  .socialCard-title {
+    font-weight: normal;
+    font-size: 2.5em; }
+  .socialCard-lastName {
+    text-transform: uppercase; }
