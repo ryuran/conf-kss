@@ -37,7 +37,7 @@ et consultant chez __Clever Age__ depuis près de 5 ans.
 
 ## La charte graphique
 
-Ce sont toutes les règles définies par le __directeur artistique__
+Ce sont toutes les règles définies par le __directeur artistique__  
 afin que les créations respectent l’__identité visuelle__.
 
 Le guide de styles en est l’extension technique.
@@ -109,13 +109,14 @@ J’attends les premiers qui vont me sortir le guide de styles de leur guide de 
 /*
 Buttons
 
-Simple buttons.
+A majority of buttons in the site are built from
+the same base class.
 
 Markup:
 <button type="button" class="btn">Button</button>
 <a href="#" class="btn">Button link</a>
 
-Style guide: UI.Buttons
+Style guide: Elements.Buttons
 */
 ```
 
@@ -208,6 +209,7 @@ Style guide: Bases.Lists
 ???
 
 Faire des boucles, des conditions, …
+
 Mais là on va dire :
 - écrire du code dans un commentaire, c’est quand même bien naze
 - pas de coloration syntaxique
@@ -254,8 +256,8 @@ Style guide: Elements.SocialCard
   </h1>
   <div class="socialCard-desc">
     <p>
-      À vos services sur twitter <a href="https://twitter.com/{{ twitterName }}"> @{{ twitterName }}</a><br/>
-      et sur Github <a href="https://github.com/{{ githubName }}"> @{{ githubName }}</a>.
+      À vos services sur twitter <a href="https://twitter.com/{{ twitterName }}">@{{ twitterName }}</a><br/>
+      et sur Github <a href="https://github.com/{{ githubName }}">@{{ githubName }}</a>.
     </p>
     {% if site is defined %}
       <p><a href="{{ site.url }}">{{ site.name }}</a></p>
